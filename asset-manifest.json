@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Rouby-portfolio/static/css/main.70fb9033.css",
+    "main.css": "/Rouby-portfolio/static/css/main.f17872a1.css",
     "main.js": "/Rouby-portfolio/static/js/main.ecf5a267.js",
     "static/media/IMG20211114154531.jpg": "/Rouby-portfolio/static/media/IMG20211114154531.00ebbf346cc0d5cc8684.jpg",
     "static/media/IMG_20231221_160056.jpg": "/Rouby-portfolio/static/media/IMG_20231221_160056.071670d173103fb05784.jpg",
     "index.html": "/Rouby-portfolio/index.html",
-    "main.70fb9033.css.map": "/Rouby-portfolio/static/css/main.70fb9033.css.map",
+    "main.f17872a1.css.map": "/Rouby-portfolio/static/css/main.f17872a1.css.map",
     "main.ecf5a267.js.map": "/Rouby-portfolio/static/js/main.ecf5a267.js.map"
   },
   "entrypoints": [
-    "static/css/main.70fb9033.css",
+    "static/css/main.f17872a1.css",
     "static/js/main.ecf5a267.js"
   ]
 }
