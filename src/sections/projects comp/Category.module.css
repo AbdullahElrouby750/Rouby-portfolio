@@ -1,0 +1,22 @@
+.a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.25s ease-in-out;
+}
+
+.a:hover{
+    color: hsl(290, 95%, 40%);
+}
+
+.a:active{
+    color: hsl(290, 95%, 60%);
+}
+
+.active{
+    color: hsl(290, 95%, 40%);
+}
+
+.inActive{
+    color: white;
+}
+

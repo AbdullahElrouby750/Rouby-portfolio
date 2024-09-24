@@ -1,0 +1,18 @@
+.btn{
+    border: 0px;
+    border-radius: 5px;
+    background-color: hsl(290, 95%, 40%);
+    font-weight: 600;
+    transition:all 0.3s ease-in-out;
+
+}
+
+.btn:hover{
+    background-color: hsl(290, 90%, 60%);
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: hsl(290, 90%, 80%);
+    transition: all 0s ease-in-out;
+}

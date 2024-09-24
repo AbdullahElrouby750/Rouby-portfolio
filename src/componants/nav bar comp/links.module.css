@@ -1,0 +1,17 @@
+.links{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    transition: color 0.25s ease-in-out;
+}
+
+.links:hover{
+    color: hsl(290, 95%, 40%);
+    cursor: pointer;
+}
+
+.links:active{
+    color: hsl(290, 95%, 60%);
+    transform: scale(0.95);
+    transition: all 0s ease-in-out;
+}

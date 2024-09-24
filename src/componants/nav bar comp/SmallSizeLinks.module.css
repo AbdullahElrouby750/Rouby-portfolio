@@ -1,0 +1,27 @@
+.bars{
+    color: white;
+    font-size: 2rem;
+    padding-right: 10px;
+    transition: color 0.25s ease-in-out;
+    z-index: 1;
+}
+
+.bars:hover{
+    color: hsl(290, 95%, 40%);
+    cursor: pointer;
+}
+
+.bars:active{   
+    color: hsl(290, 95%, 60%);
+    transform: scale(0.95);
+}
+
+.wrapper{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .wrapper{
+        display: flex;
+    }
+}

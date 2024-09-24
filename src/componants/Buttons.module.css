@@ -1,0 +1,26 @@
+.myBtn{
+    border: 0px;
+    border-radius: 5px;
+    background-color: hsl(290, 95%, 40%);
+    font-weight: 600;
+    transition:all 0.3s ease-in-out;
+
+}
+
+.myBtn:hover{
+    background-color: hsl(290, 95%, 60%);
+    cursor: pointer;
+}
+
+.myBtn:active{
+    background-color: hsl(290, 95%, 80%);
+    transition:all 0s ease-in-out;
+}
+
+@media screen and (max-width: 600px){
+    .myBtn{
+        width: 100%!important;
+        font-size: 16px!important;
+        padding: 0;
+    }
+}

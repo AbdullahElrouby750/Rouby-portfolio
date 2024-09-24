@@ -1,0 +1,20 @@
+.links{
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.wrapper{
+    width: 100%;
+    left: 0%;
+    transform: translateY(-60%);
+    height: fit-content;
+    padding: 10px;
+    background-color: hsla(0, 0%, 15%, 0.9);
+    position: fixed;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.5s 0.1s ease-in-out;
+}
+
+

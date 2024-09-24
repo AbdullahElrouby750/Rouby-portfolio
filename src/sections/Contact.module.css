@@ -1,0 +1,37 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 10%);
+    width: 100%;
+    padding: 20px;
+
+}
+
+.input{
+    width: 48%;
+    font-size: white !important;
+}
+
+.inputs{
+    border-color: hsl(290,90%,40%);
+}
+
+.inputs:focus{
+    
+    border-color: hsl(290,90%,60%);
+    box-shadow: 0px 0px 15px hsl(290,90%,40%);
+}
+
+.inputs::placeholder{
+    color: hsl(0, 0%, 70%);
+}
+
+
+.warning{
+    border-color: hsl(0,70%,60%)!important;
+}
+
+.warning::placeholder{
+    color:  hsl(0,90%,50%)!important;
+}

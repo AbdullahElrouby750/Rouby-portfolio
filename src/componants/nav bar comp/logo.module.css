@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Sofadi+One&display=swap');
+
+
+.logoWrapper{
+    font-size: 2rem;
+}
+
+.logoWrapper:hover{
+    cursor: pointer;
+}
+
+.logo{
+    color: white;
+}
+.logoText{
+    margin-left: 5px;
+    font-family: 'Sofadi One', static;
+    color: hsl(290, 95%, 40%);
+}

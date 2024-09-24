@@ -1,0 +1,82 @@
+.wrapper{
+    width: 30%;
+    flex-shrink: 1;
+    /* min-width: 90%; */
+    min-width: 250px;
+    transition: all 0.7s 0s ease-in-out;
+    position: relative;
+    
+}
+
+.wrapper:hover{
+    transform:scale(1.1);
+    transition: all 0.3s ease-in;
+    border-color: hsl(290, 90%, 40%);
+    box-shadow: 3px 3px 10px hsl(290, 90%, 40%);
+}
+
+.card{
+    color: white;
+    height: 100%;
+}
+
+.btn{
+    background-color: transparent;
+    border-color: hsl(290, 90%, 40%);
+    transition: border 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: hsl(290, 95%, 60%);
+    border-top: 4px solid hsl(290, 90%, 40%);
+    border-left: 4px solid hsl(290, 90%, 40%);
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: hsl(290, 95%, 60%);
+    transform: scale(0.95);
+    transition: all 0s ease-in-out;
+}
+
+.cardBody{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.cardBords{
+    background-color: hsl(0, 0%, 5%);
+    
+}
+
+.popUpWindow{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid white;
+    position: absolute;
+    flex: 1 1;
+    z-index: 2;
+    transform: translate(3%,-102%);
+    padding: 10px;
+    transition: all 0.3s 0.4s ease-in;
+    background: hsl(0, 0%, 40%, 0.8);
+}
+
+.popUpWindow img{
+    object-fit: cover;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .popUpWindow{
+        
+    transform: translateY(-85%);
+    }
+}

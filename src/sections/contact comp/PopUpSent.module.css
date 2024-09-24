@@ -1,0 +1,35 @@
+.popUpwindow{
+    background-color: hsl(0, 0%, 20%, 0.8);
+    font-size: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    width: 40%;
+    height: 300px;
+    transform: translateY(30%);
+    position: absolute;
+    padding: 10px;
+}
+
+.btn{
+    font-size: 1.5rem;
+}
+
+.success{
+    color: hsl(152, 69%, 31%);
+    border-color: hsl(152, 69%, 41%);
+    
+}
+
+.failure{
+    color: hsl(354, 70%, 54%);
+    border-color: hsl(354, 70%, 64%);
+}
+
+.hide{
+    display: none;
+}
+

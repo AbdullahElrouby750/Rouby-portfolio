@@ -1,0 +1,14 @@
+.icons{
+    transition: all 0.2s ease;
+}
+
+.icons:hover{
+    color: hsl(290, 95%, 40%)!important;
+    cursor: pointer;
+}
+
+.icons:active{
+    transform: scale(0.95);
+    color: hsl(290, 95%, 55%)!important;
+    transition: all 0s ease-in-out;
+}

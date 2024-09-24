@@ -1,0 +1,32 @@
+.pref{
+    position: relative;
+    
+    transform: translateY(10%);
+}
+
+.pref h2::before{
+    
+    content: "";
+    border: 3px solid hsl(290, 95%, 40%);
+    margin-right: 5px;
+}
+@media screen and (max-width: 600px){
+    .pref li{
+        width: 100%!important;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 992.9px){
+    .pref{
+        transform: translateY(0%);
+        width: 90%!important;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px){
+    .pref{
+        transform: translateY(8%);
+    }
+}
