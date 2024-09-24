@@ -37,6 +37,14 @@
     animation: slide1 2.3s infinite ease-in-out;
 }
 
+/* media screen */
+
+@media screen and (max-width:370px){
+    .layer{
+        
+    height: 102.4%;
+    }
+}
 
 @keyframes dashslide {
     10%{transform: translateX(0px);}
