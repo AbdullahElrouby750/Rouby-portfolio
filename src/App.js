@@ -1,4 +1,5 @@
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
 import SectionRefContextProvider from './store/sectionRefContext';
 
 import NavBar from './componants/NavBar';
@@ -23,6 +24,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Analytics />
     </SectionRefContextProvider>
   );
 }
