@@ -8,7 +8,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export default function SocialIcons() {
 return (
     <div className='fs-1 d-flex justify-content-center align-items-center'>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdullahelrouby750@gmail.com&su=Subject&body=Your%20Email%20Content" target="_blank" rel="noopener noreferrer">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=roubyofficial@gmail.com&su=Subject&body=Your%20Email%20Content" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon className={`${classes.icons} mx-3 fs-2`} icon={faEnvelope} style={{ color: 'hsl(0, 50%, 50%)' }} />
         </a>
         <a href="https://www.linkedin.com/in/abdullah-elrouby-803554245/" target='_blank' rel="noreferrer">

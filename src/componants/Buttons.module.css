@@ -4,7 +4,7 @@
     background-color: hsl(290, 95%, 40%);
     font-weight: 600;
     transition:all 0.3s ease-in-out;
-
+    user-select: none;
 }
 
 .myBtn:hover{

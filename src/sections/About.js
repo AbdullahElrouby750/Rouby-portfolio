@@ -9,7 +9,7 @@ export default function About() {
     
     const Refs = useContext(sectionRef);
   return (
-    <section ref={Refs.about}  className={`${style.about} p-2`}>
+    <section ref={Refs.about}  className={`${style.about} p-2 pb-5`}>
       <ProfileImg />
       <Pref />
     </section>

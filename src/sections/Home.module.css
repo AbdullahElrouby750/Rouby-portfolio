@@ -5,6 +5,7 @@
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
+    user-select: none;
 }
 .layer{
     position: absolute;
@@ -30,6 +31,7 @@
     overflow: hidden;
     transition: all 0.5s 0.5s ease-in-out;
     animation: dashslide 2.3s infinite ease-in-out;
+    user-select: none;
 }
 
 .pro{

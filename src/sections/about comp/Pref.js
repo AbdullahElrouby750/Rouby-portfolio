@@ -12,7 +12,7 @@ export default function Pref() {
     const hireMe = function(){
         console.log('clicked');
 
-        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=abdullahelrouby750@gmail.com&su=Jop&body=Your%20Email%20Content", "_blank","noreferrer");
+        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=roubyofficial@gmail.com&su=Jop&body=Your%20Email%20Content", "_blank","noreferrer");
     }
 
     const downloadCV = function(){
@@ -30,11 +30,11 @@ export default function Pref() {
         <div className={`w-50 my-5 ${style.pref}`}>
             
             <ul className=' w-100 p-0 list-unstyled row'>
-                <li className='col-6'><span className=' fw-bold me-2'>Name: </span>Abdullah Elrouby</li>
-                <li className='col-6'><span className=' fw-bold me-2'>Age: </span>21 Year</li>
-                <li className='col-6'><span className=' fw-bold me-2'>Freelance: </span>Available</li>
-                <li className='col-6'><span className=' fw-bold me-2'>Job Title: </span>Web Developer</li>
-                <li className='col-12'><span className=' fw-bold me-2'>E-mail: </span>abdullahelrouby750@gmail.com</li>
+                <li className=' text-start col-6'><span className='  fw-bold me-2'>Name: </span>Abdullah Elrouby</li>
+                <li className=' text-start col-6'><span className='  fw-bold me-2'>Age: </span>21 Year</li>
+                <li className=' text-start col-6'><span className='  fw-bold me-2'>Freelance: </span>Available</li>
+                <li className=' text-start col-6'><span className='  fw-bold me-2'>Job Title: </span>Web Developer</li>
+                <li className=' text-start col-12'><span className='  fw-bold me-2'>E-mail: </span>roubyofficial@gmail.com</li>
             </ul>
 
             <h2 className=' my-4'>HELLO,</h2>

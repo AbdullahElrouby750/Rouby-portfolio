@@ -9,6 +9,7 @@
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     animation: floating 1s ease-in-out infinite;
+    user-select: none;
 }
 
 .wrapper:hover {

@@ -11,9 +11,12 @@
 
 .logo{
     color: white;
+    /* set text not to be selected/highlited when double clicked */
+    user-select: none;
 }
 .logoText{
     margin-left: 5px;
     font-family: 'Sofadi One', static;
     color: hsl(290, 95%, 40%);
+    user-select: none;
 }
