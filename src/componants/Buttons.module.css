@@ -13,7 +13,7 @@
 }
 
 .myBtn:active{
-    background-color: hsl(290, 95%, 80%);
+    background-color: hsl(290, 94%, 80%);
     transition:all 0s ease-in-out;
 }
 

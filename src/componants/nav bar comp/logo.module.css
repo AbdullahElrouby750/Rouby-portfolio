@@ -16,7 +16,7 @@
 }
 .logoText{
     margin-left: 5px;
-    font-family: 'Sofadi One', static;
+    font-family: 'Sofadi One', static !important;
     color: hsl(290, 95%, 40%);
     user-select: none;
 }

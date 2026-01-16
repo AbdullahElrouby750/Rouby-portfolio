@@ -34,7 +34,7 @@ export default function Pref() {
                 <li className=' text-start col-6'><span className='  fw-bold me-2'>Age: </span>21 Year</li>
                 <li className=' text-start col-6'><span className='  fw-bold me-2'>Freelance: </span>Available</li>
                 <li className=' text-start col-6'><span className='  fw-bold me-2'>Job Title: </span>Web Developer</li>
-                <li className=' text-start col-12'><span className='  fw-bold me-2'>E-mail: </span>roubyofficial@gmail.com</li>
+                <li className=' text-start col-6'><span className='  fw-bold me-2'>E-mail: </span>roubyofficial@gmail.com</li>
             </ul>
 
             <h2 className=' my-4'>HELLO,</h2>
