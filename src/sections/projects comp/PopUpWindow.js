@@ -2,6 +2,8 @@ import React from 'react'
 import style from './PopUpWindow.module.css'
 
 export default function PopUpWindow({github, liveSite, porjectImg, name}) {
+    console.log('name::', name)
+    console.log('porjectImg:: ', porjectImg)
     return (
         <div className='w-100 h-100'>
             <img className=' rounded-2 w-100 h-75' src={porjectImg} alt={name} />
