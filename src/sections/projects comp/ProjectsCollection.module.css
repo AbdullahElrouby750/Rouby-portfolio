@@ -1,0 +1,92 @@
+.collectionWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0;
+    flex: 1;
+    height: 500px;
+}
+
+/* ============================================
+   CENTERED FLEX: For categories with few items
+   ============================================ */
+.centeredFlex {
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredFlex .projectsContainer {
+    flex-wrap: nowrap;
+}
+
+/* ============================================
+   MARQUEE: For overflowing categories
+   ============================================ */
+.marquee {
+    position: relative;
+}
+
+.marquee .projectsContainer {
+    animation: marqueeScroll 30s linear infinite;
+}
+
+.marquee .projectsContainer.duplicate {
+    animation: marqueeScroll 30s linear infinite;
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause marquee on hover (Desktop only) */
+@media (min-width: 769px) {
+    .marquee:hover .projectsContainer {
+        animation-play-state: paused;
+    }
+}
+
+/* ============================================
+   MOBILE: Disable marquee, enable scroll snap
+   ============================================ */
+@media (max-width: 768px) {
+    .collectionWrapper {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .marquee {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .marquee .projectsContainer {
+        animation: none;
+    }
+
+    .marquee .projectsContainer.duplicate {
+        display: none;
+    }
+
+    .projectsContainer {
+        scroll-snap-type: x mandatory;
+    }
+}

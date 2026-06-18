@@ -1,37 +1,91 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import PopUpWindow from './PopUpWindow';
-
 import style from './Project.module.css'
 
+export default function Project({ data }) {
+  const [isExpanded, setIsExpanded] = useState(false);
 
-export default function Project({data}) {
-  const [showPopUp, setShowPopUp] = useState(false);
-  
-  const togglepopUp = function (){
-    setShowPopUp(!showPopUp);
-  }
+  const handleMouseEnter = () => {
+    // Desktop hover
+    if (window.innerWidth > 768) {
+      setIsExpanded(true);
+    }
+  };
 
+  const handleMouseLeave = () => {
+    // Desktop hover
+    if (window.innerWidth > 768) {
+      setIsExpanded(false);
+    }
+  };
+
+  const handleClick = () => {
+    // Mobile tap
+    if (window.innerWidth <= 768) {
+      setIsExpanded(!isExpanded);
+    }
+  };
 
   return (
-    <div className={`m-3 ${style.wrapper}`}>
-      <div className={`${style.popUpWindow} ${showPopUp ? style.show : style.hide}`}>
-        <PopUpWindow liveSite={data.liveLink} github={data.github} porjectImg={data.img} name={data.name}/>
-      </div>
-      <Card className={style.card}>
-        <Card.Header className={style.cardBords} as="h5">{data.name}</Card.Header>
-        <Card.Body className={style.cardBody}>
-          <div className=' d-flex flex-column justify-content-between h-100'>
+    <div
+      className={`${style.projectCard} ${isExpanded ? style.expanded : ''}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
+    >
+      <div className={style.cardContent}>
+        <h5 className={style.projectTitle}>{data.name}</h5>
 
-          <Card.Text className={style.cardText}>{data.des}</Card.Text>
-          <Button onClick={togglepopUp} className={style.btn} variant="primary">{showPopUp ? 'Hide Details' : 'View Details'}</Button>
+        <div className={style.descriptionSection}>
+          <p className={style.projectDescription}>{data.des}</p>
+        </div>
+
+        <div className={style.expandedContent}>
+          <img
+            className={style.projectImage}
+            src={data.img}
+            alt={data.name}
+          />
+
+          <div className={style.buttonGroup}>
+            <a
+              className={style.linkButton}
+              href={data.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className={style.btn} variant="primary">
+                GitHub
+              </Button>
+            </a>
+
+            {data.liveLink !== 'none' && (
+              <a
+                className={style.linkButton}
+                href={data.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className={style.btn} variant="primary">
+                  Live Site
+                </Button>
+              </a>
+            )}
           </div>
-        </Card.Body>
-        <Card.Footer className={style.cardBords}>
-          <small className="text-light">{data.creationDate}</small>
-        </Card.Footer>
-      </Card>
+        </div>
+
+        <div className={style.footer}>
+          <small className={style.creationDate}>{data.creationDate}</small>
+        </div>
+
+        {!isExpanded && (
+          <div className={style.interactionCue}>
+            <span className={style.cueText}>
+              {window.innerWidth > 768 ? 'Hover to expand' : 'Tap to expand'}
+            </span>
+          </div>
+        )}
+      </div>
     </div>
-  )
+  );
 }
