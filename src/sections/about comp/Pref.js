@@ -5,10 +5,14 @@ import {faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 import style from './Pref.module.css';
 
 export default function Pref() {
-    const aboutMe1 = "Hello, I'm Abdullah Elrouby, your go-to Frontend Developer from the land of Egypt, where we not only craft pyramids but also pixel-perfect, interactive web applications. With a Bachelor's degree in Computer Engineering, my coding arsenal is brimming with skills in HTML, CSS, JavaScript, and a sharp proficiency in React and Bootstrap — but that's just the tip of the iceberg.";
-    const aboutMe2 = "In my portfolio, you’ll discover a range of projects from weather apps that outsmart local meteorologists to a recipe search website that could make your grandma jealous, and a product management system that’s as orderly as a bookstore index. These are just a few examples; I have a whole closet full of digital magic tricks that showcase my ability to blend functionality with a flair for user-friendliness.";
-    const aboutMe3 = "Who needs coffee when you’ve got a relentless curiosity and a knack for solving puzzles that would make Sherlock jealous? I thrive on unraveling the knottiest coding challenges with a dash of creativity and a strategic twist, all backed by my multiverse theory of problem-solving. I’m on a quest for a team that values a bit of genius, a touch of eccentricity, and appreciates the art of a well-timed meme as we craft digital masterpieces together.";
+    const aboutMe1 = "Hey there! I'm Abdullah Elrouby, a Frontend Developer and Computer Engineering graduate dedicated to building fast, scalable, and visually stunning user interfaces."
+    const aboutMe2 = "While I appreciate great UI/UX, I am obsessed with what happens under the hood. I specialize in the React/Next.js ecosystem, using TypeScript and advanced state management to build seamless web experiences. My closet of digital projects doesn't feature generic templates; it features award-winning architectures—like an AI-enabled platform pitched to a 4th-place finish at a major hackathon, and applications optimized to slash redundant API calls completely."
+    const aboutMe3 = "For me, writing code is about solving complex puzzles that directly impact business goals and user satisfaction. Whether optimizing Core Web Vitals to boost load speeds by 75% or designing robust component layouts, I bring a mix of dedicated technical expertise and creative problem-solving to the table. Let's connect and build something exceptional together."
 
+    const date = new Date()
+    const currentYear = date.getFullYear();
+    const birthYear = 2003;
+    const age = currentYear - birthYear;    
     const hireMe = function(){
         console.log('clicked');
 
@@ -31,7 +35,7 @@ export default function Pref() {
             
             <ul className=' w-100 p-0 list-unstyled row'>
                 <li className=' text-start col-6'><span className='  fw-bold me-2'>Name: </span>Abdullah Elrouby</li>
-                <li className=' text-start col-6'><span className='  fw-bold me-2'>Age: </span>21 Year</li>
+                <li className=' text-start col-6'><span className='  fw-bold me-2'>Age: </span>{age} Year</li>
                 <li className=' text-start col-6'><span className='  fw-bold me-2'>Freelance: </span>Available</li>
                 <li className=' text-start col-6'><span className='  fw-bold me-2'>Job Title: </span>Web Developer</li>
                 <li className=' text-start col-6'><span className='  fw-bold me-2'>E-mail: </span>roubyofficial@gmail.com</li>
